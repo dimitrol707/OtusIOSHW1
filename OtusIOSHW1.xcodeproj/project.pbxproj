@@ -11,6 +11,14 @@
 		D135463E28563D2700154D16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D135463D28563D2700154D16 /* ContentView.swift */; };
 		D135464028563D2900154D16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D135463F28563D2900154D16 /* Assets.xcassets */; };
 		D135464328563D2900154D16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D135464228563D2900154D16 /* Preview Assets.xcassets */; };
+		D135464B28563D5700154D16 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D135464A28563D5700154D16 /* HomeScreen.swift */; };
+		D135464E28563DD200154D16 /* Tab1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D135464D28563DD200154D16 /* Tab1View.swift */; };
+		D135465028563DDB00154D16 /* Tab2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D135464F28563DDB00154D16 /* Tab2View.swift */; };
+		D135465228563DE200154D16 /* Tab3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D135465128563DE200154D16 /* Tab3View.swift */; };
+		D135465528563DFA00154D16 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D135465428563DFA00154D16 /* HomeViewModel.swift */; };
+		D135465828563FC200154D16 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = D135465728563FC200154D16 /* Book.swift */; };
+		D135465A2856418C00154D16 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13546592856418C00154D16 /* BookView.swift */; };
+		D13546612856462900154D16 /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = D13546602856462900154D16 /* UIComponents */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		D135463D28563D2700154D16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D135463F28563D2900154D16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D135464228563D2900154D16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D135464A28563D5700154D16 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		D135464D28563DD200154D16 /* Tab1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1View.swift; sourceTree = "<group>"; };
+		D135464F28563DDB00154D16 /* Tab2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2View.swift; sourceTree = "<group>"; };
+		D135465128563DE200154D16 /* Tab3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3View.swift; sourceTree = "<group>"; };
+		D135465428563DFA00154D16 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D135465728563FC200154D16 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		D13546592856418C00154D16 /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
+		D135465E285645E000154D16 /* UIComponents */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UIComponents; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D13546612856462900154D16 /* UIComponents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +52,10 @@
 		D135462F28563D2700154D16 = {
 			isa = PBXGroup;
 			children = (
+				D135465D285645E000154D16 /* Packages */,
 				D135463A28563D2700154D16 /* OtusIOSHW1 */,
 				D135463928563D2700154D16 /* Products */,
+				D135465F2856462900154D16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +70,9 @@
 		D135463A28563D2700154D16 /* OtusIOSHW1 */ = {
 			isa = PBXGroup;
 			children = (
+				D135465628563FB900154D16 /* Model */,
+				D135465328563DEC00154D16 /* ViewModel */,
+				D135464928563D4400154D16 /* View */,
 				D135463B28563D2700154D16 /* OtusIOSHW1App.swift */,
 				D135463D28563D2700154D16 /* ContentView.swift */,
 				D135463F28563D2900154D16 /* Assets.xcassets */,
@@ -65,6 +87,57 @@
 				D135464228563D2900154D16 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D135464928563D4400154D16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D135464C28563DC600154D16 /* Tabs */,
+				D13546592856418C00154D16 /* BookView.swift */,
+				D135464A28563D5700154D16 /* HomeScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D135464C28563DC600154D16 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				D135464D28563DD200154D16 /* Tab1View.swift */,
+				D135464F28563DDB00154D16 /* Tab2View.swift */,
+				D135465128563DE200154D16 /* Tab3View.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		D135465328563DEC00154D16 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D135465428563DFA00154D16 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D135465628563FB900154D16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D135465728563FC200154D16 /* Book.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D135465D285645E000154D16 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				D135465E285645E000154D16 /* UIComponents */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		D135465F2856462900154D16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +156,9 @@
 			dependencies = (
 			);
 			name = OtusIOSHW1;
+			packageProductDependencies = (
+				D13546602856462900154D16 /* UIComponents */,
+			);
 			productName = OtusIOSHW1;
 			productReference = D135463828563D2700154D16 /* OtusIOSHW1.app */;
 			productType = "com.apple.product-type.application";
@@ -137,8 +213,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D135465A2856418C00154D16 /* BookView.swift in Sources */,
+				D135465828563FC200154D16 /* Book.swift in Sources */,
+				D135465228563DE200154D16 /* Tab3View.swift in Sources */,
+				D135464E28563DD200154D16 /* Tab1View.swift in Sources */,
+				D135465528563DFA00154D16 /* HomeViewModel.swift in Sources */,
 				D135463E28563D2700154D16 /* ContentView.swift in Sources */,
 				D135463C28563D2700154D16 /* OtusIOSHW1App.swift in Sources */,
+				D135464B28563D5700154D16 /* HomeScreen.swift in Sources */,
+				D135465028563DDB00154D16 /* Tab2View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +422,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D13546602856462900154D16 /* UIComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UIComponents;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D135463028563D2700154D16 /* Project object */;
 }
