@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import UIComponents
+import UIComponent
 
 struct Tab3View: View {
     @State private var isPresented: Bool = false
