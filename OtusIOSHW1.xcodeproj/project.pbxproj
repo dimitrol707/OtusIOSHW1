@@ -18,7 +18,6 @@
 		D135465528563DFA00154D16 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D135465428563DFA00154D16 /* HomeViewModel.swift */; };
 		D135465828563FC200154D16 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = D135465728563FC200154D16 /* Book.swift */; };
 		D135465A2856418C00154D16 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13546592856418C00154D16 /* BookView.swift */; };
-		D13546612856462900154D16 /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = D13546602856462900154D16 /* UIComponents */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,15 +33,14 @@
 		D135465428563DFA00154D16 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		D135465728563FC200154D16 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		D13546592856418C00154D16 /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
-		D135465E285645E000154D16 /* UIComponents */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UIComponents; sourceTree = "<group>"; };
+		D135466F285660A400154D16 /* UIComponents */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UIComponents; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D135463528563D2700154D16 /* Frameworks */ = {
+		D135466728565EBF00154D16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D13546612856462900154D16 /* UIComponents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +50,7 @@
 		D135462F28563D2700154D16 = {
 			isa = PBXGroup;
 			children = (
-				D135465D285645E000154D16 /* Packages */,
+				D135466E285660A400154D16 /* Packages */,
 				D135463A28563D2700154D16 /* OtusIOSHW1 */,
 				D135463928563D2700154D16 /* Products */,
 				D135465F2856462900154D16 /* Frameworks */,
@@ -125,19 +123,19 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		D135465D285645E000154D16 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				D135465E285645E000154D16 /* UIComponents */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 		D135465F2856462900154D16 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D135466E285660A400154D16 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				D135466F285660A400154D16 /* UIComponents */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +146,8 @@
 			buildConfigurationList = D135464628563D2900154D16 /* Build configuration list for PBXNativeTarget "OtusIOSHW1" */;
 			buildPhases = (
 				D135463428563D2700154D16 /* Sources */,
-				D135463528563D2700154D16 /* Frameworks */,
 				D135463628563D2700154D16 /* Resources */,
+				D135466728565EBF00154D16 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,7 +155,6 @@
 			);
 			name = OtusIOSHW1;
 			packageProductDependencies = (
-				D13546602856462900154D16 /* UIComponents */,
 			);
 			productName = OtusIOSHW1;
 			productReference = D135463828563D2700154D16 /* OtusIOSHW1.app */;
@@ -422,13 +419,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		D13546602856462900154D16 /* UIComponents */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = UIComponents;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D135463028563D2700154D16 /* Project object */;
 }
